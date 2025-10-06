@@ -2,6 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import  Home from "./pages/Home.jsx"
+import  ListaPokemones  from "./pages/ListaPokemones.jsx"
+import  DetallePokemon  from "./pages/DetallePokemon.jsx"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +13,19 @@ function App() {
   return (
     <>
       <div>
+<Router>
+  {/*componente reutilizable (navbar)*/}
+  <main>
+<Routes>
+  <Route path="/" element ={<Home/>} />
+  <Route path="/pokemones" element={<ListaPokemones />} />
+  <Route path="/pokemones/:id" element={<DetallePokemon />} />
+  <Route path="*" element={<h1>Error 404 - Página no encontrada</h1>} />
+ </Routes>
+  </main>
+</Router>
+
+
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -31,5 +48,4 @@ function App() {
     </>
   )
 }
-
 export default App
