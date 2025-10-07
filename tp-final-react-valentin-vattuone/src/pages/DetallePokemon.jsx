@@ -1,10 +1,10 @@
 import React from 'react';
+export default function DetallePokemon() {
 
-const DetallePokemon = () => {
-  return (
-    // ... contenido ...
-    <h1>Home</h1>
-  );
-};
+    return (
+        <div>
+            <h1>Detalle de Pokémon</h1>
+        </div>
+    );
+}
 
-export default  DetallePokemon; 
