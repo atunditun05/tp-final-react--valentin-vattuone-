@@ -1,9 +1,9 @@
-import "./styles/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import ListaPokemones from "./pages/ListaPokemones.jsx";
 import DetallePokemon from "./pages/DetallePokemon.jsx";
 import NavBar from "./components/NavBar.jsx";
+import "./styles/App.css";
 function App() {
   return (
     <>
