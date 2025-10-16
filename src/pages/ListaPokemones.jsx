@@ -67,7 +67,7 @@ export default function ListaPokemones() {
   // falta rotar la pokebola
   return (
     <div className="container py-5">
-      <h1 className="display-4 text-center my-4">Listado de Pokémones</h1>
+      <h1 className="display-4 text-center my-4 text-white">Listado de Pokémones</h1>
 
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
         {pokemonData.map((pokemon, index) => (

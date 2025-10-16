@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import personajes from "../assets/personajes.png";
 import "../styles/App.css";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home">
@@ -16,9 +17,18 @@ const Home = () => {
         Explora todos y cada uno de los pokemones existentes, sus estadísticas,
         habilidades y más.
       </h2>
+
       <div className="home-container">
-        <img src={personajes} alt="personajes" className="personajes" />
-        <div className="texto-container">
+        
+             <img src={personajes} alt="personajes" className="personajes" />
+
+    <Link to="/pokemones" className="btn btn-danger d-block" role="button"
+    >
+        <strong>COMENZAR A EXPLORAR</strong>
+    </Link>
+<div className="texto-container">
+               
+       
           <h4>
             En este proyecto realizado con React Js + Vite, utilizaremos la
             PokeApi, sus datos e imágenes para:

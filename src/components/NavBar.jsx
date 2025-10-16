@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo  from "../assets/Logo.png";
-// import { Navbar, Nav, Container } from "react-bootstrap"; 
+
 
 function NavbarBootstrap() {
   return (
-    <nav className="navbar navbar-expand-lg bg-primary navbar-dark sticky-top">
+    <nav className="navbar navbar-expand-lg bg-primary">
       <div className="container-fluid">
         <Link className="navbar-brand d-flex align-items-center" to="/">
         <img
@@ -23,7 +23,7 @@ function NavbarBootstrap() {
         </button>
         
         <div className="collapse navbar-collapse" id="navbarText">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">
                 Inicio
@@ -34,10 +34,12 @@ function NavbarBootstrap() {
                 Listado Pokémon
               </Link>
             </li>
+             <li className="nav-item">
+              <Link className="nav-link" to="/pokemones/">
+                Favoritos
+              </Link>
+            </li>
           </ul>
-          <span className="navbar-text">
-            Mis pokemones
-          </span>
         </div>
       </div>
     </nav>

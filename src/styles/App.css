@@ -30,6 +30,19 @@ body::before {
 #root {
   position: relative;
   z-index: 1;
+  #root {
+  max-width: 1560px;
+  min-width: 320px;
+  width: 100%;
+
+}
+}
+
+.nav-item{
+  font-size: 1.6em;
+}
+.nav-item:hover{
+  background-color: #eee;
 }
 .home h1 {
   padding-top: 1.5em;
@@ -44,7 +57,7 @@ h5 {
   padding: 0.5em;
 }
 .personajes {
-  width: 50em;
+  width: 50%;
   padding-top: 1.5em;
 }
 .home-container {
@@ -61,9 +74,8 @@ h5 {
 }
 .home h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #e0deff;
+  color: #ffffff;
   padding-bottom: 1em;
-
   text-align: center;
 }
 .home h4 {
@@ -83,116 +95,182 @@ h5 {
   transition: filter 300ms;
 }
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
 .card {
-  border: 1px solid #ffa7a7;
+  width: 18rem;
+  border: 2px solid #ffbf00;
   transition: transform 0.2s;
-  margin-bottom: 20px;
-  height: 22rem;
-  width: 15rem;
-}
-
-.card .card-img-top {
-  height: 10rem; /* Altura fija de 10rem (similar a h-40 de Tailwind) */
-  object-fit: contain; /* Asegura que la imagen se vea completa sin recortarse */
-  max-width: 12rem;
-}
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.pokemon-detalle {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9ab;
+  height: 26rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+     padding: 0.5rem;
+}
+.card-img-top{
+  margin: 0 auto;
+  padding: 0.5em;
+  width: 13rem;
+  height: 13rem;
+
+}
+.card-img-top:hover{
+transform: scale(140%);
+  transition: all ease 0.5s;
+
+}
+.card-body{
+  display: flex;
+    flex-direction: column;
+justify-content: space-between; 
+ text-align: center;
+    }
+    .card-name{
+        padding-top: 0.5rem;
+    }
+
+.card:hover {
+  transform: translateY(5px);
+}
+
+.detallepokemon {
+    max-width: 100em;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #ffffffdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #060022;
+    
 }
 
 .pokemon-detalle img {
-  width: 350px;
-  height: 350px;
+    width: 300px; 
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.pokemon-detalle-info {
+.detallepokemon-caracteristicas {
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 10px;
+    background-color: #ffab0485;
+    display: flex;
+    
+}
+
+.detallepokemon-caracteristicas-titulo {
+    text-align: center;
+    font-size: 2rem;
+    width: 20%; 
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.detallepokemon-datos{
+  display: flex;
+align-self: flex-start;
+}
+
+
+.detalle-pokemon-type-data {
+    display: flex;
+    gap: 15px; 
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+.dato-altura{
+  background-color: #cc0c36;
+}
+.dato-peso{
+  background-color: #f47a00;
+}
+.dato-xp{
+  background-color: #007200;
+}
+.dato-altura, .dato-peso, .dato-xp{
+  padding: 10px 15px; 
+    border-radius: 5px;
+    font-weight: bold; 
+    text-align: left;
+}
+.tag-type {
+    padding: 10px 15px; 
+    border-radius: 5px;
+    font-weight: bold;
+    color: white; 
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #540090; 
+    width: auto; 
+}
+.detallepokemon-caracteristicas-special-value{
+  color: #eee;
+  gap: 2em;
+  font-size: 2em;
+  display: flex;
+  align-items: flex-start;
   text-align: left;
-  width: 100%;
-  margin-top: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  background-color: #ffffff91;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-}
-
-.pokemon-detalle-info-titulo {
-  text-align: center;
-  font-size: 1.5rem;
-  width: 20%;
-  border-right: 1px solid #ccc;
-  padding-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.pokemon-detalle-info-titulo .titulo-vertical {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-}
-
-.pokemon-detalle-info-valor {
-  font-size: 1.2rem;
-  width: 80%;
-  padding-left: 10px;
-}
-
-.pokemon-detalle-info .tagBox {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: flex-start;
-  gap: 8px;
+  width: 100%;
 }
 
-.pokemon-detalle-info-valor .tagTipo {
-  display: inline-block;
-  background-color: #eee;
-  border-radius: 12px;
-  padding: 5px 10px;
-  margin: 2px;
-  font-size: 0.9rem;
+.detallepokemon-caracteristicas-value {
+    font-size: 1.2rem;
+    width: 80%; 
+    padding-left: 10px;
+    
 }
 
-.pokemon-detalle-info-valor .listBox {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 4px;
-  max-height: 300px;
-  overflow-y: auto;
+
+.detalle-pokemon-caracteristicas .tagBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
 }
 
-.pokemon-detalle-info-valor .listBox .listItem {
-  flex: 1 1 calc(50% - 10px);
-  padding: 5px 10px;
-  font-size: 0.95rem;
-  box-sizing: border-box;
-  word-break: break-word;
-  border-bottom: 1px solid #ccc;
-  margin: 2px 0;
+.detallepokemon-caracteristicas-value .tagTipo {
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin: 2px;
+    font-size: 0.9rem;
+    
+}
+
+.detallepokemon-caracteristicas-value .carac-card {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.detallepokemon-caracteristicas-value .carac-card .itemList {
+    padding: 5px 10px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    word-break: break-word;
+    border-bottom: 1px solid #ccc;
+    margin: 2px 0;
+    flex: 1 1 100%
+}
+
+.btn-group .btn a {
+    color: white !important; 
+    text-decoration: none;
 }

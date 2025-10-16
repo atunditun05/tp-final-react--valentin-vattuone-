@@ -9,16 +9,17 @@ export default function Card({ pokemonData }) {
   return (
 
 
-<div className="card" >
+<div className="card text-center mb-3" >
     <img
         src={pokemonData.sprites.other.dream_world.front_default}
-        alt="pokemonimage"
+        alt="pokemonimage" className="card-img-top"
         />
   <div className="card-body">
-    <h1 className="card-title">{pokemonData.name}</h1>
- <p className="card-text">ID: {pokemonData.id}</p>    
- <Link to={`/pokemones/${pokemonData.id}`}className="btn btn-primary">Ver detalle</Link>
-  </div>
+    <h1 className="card-name">{pokemonData.name}</h1>
+    </div>
+ <p className="card-id">ID: {pokemonData.id}</p>    
+ <Link to={`/pokemones/${pokemonData.id}`}className="btn btn-warning">Ver detalle</Link>
 </div>
+
   );
 }
