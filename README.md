@@ -1,16 +1,155 @@
-# React + Vite
+# 🧭 Pokepedia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con **React + Vite** que permite explorar todos los Pokémon existentes, acceder a sus estadísticas, habilidades, tipos, peso, altura y movimientos.  
+Consume datos en tiempo real desde la **PokéAPI** y presenta una interfaz dinámica, moderna y responsive.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Características Principales
 
-## React Compiler
+- 🔎 **Exploración completa** de Pokémon con imágenes oficiales.
+- 📊 **Detalles individuales**: altura, peso, experiencia base, tipos y estadísticas.
+- ⚙️ **Movimientos y habilidades** listados por cada Pokémon.
+- 🧭 **Navegación SPA** con React Router.
+- 💅 **Diseño responsive** y visual atractivo con Bootstrap.
+- 🎞️ **Animaciones en CSS**: efectos de escala, rotación y keyframes.
+- 🧩 **Componentes reutilizables** para mejorar la estructura y mantenimiento del código.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- **React 19**
+- **Vite** – entorno de desarrollo rápido
+- **React Router DOM** – navegación entre vistas
+- **Bootstrap 5** – estilos y layout responsive
+
+### API
+- **PokéAPI** – datos actualizados de Pokémon
+
+### Estilos y Animaciones
+- **CSS3** – animaciones personalizadas (rotación, crecimiento, keyframes)
+- **Bootstrap** – grid system y componentes visuales
+- **Diseño responsive** – adaptado a móviles, tablets y desktop
+
+---
+
+## 📂 Estructura del Proyecto
+
+```
+pokepedia/
+├── public/
+├── src/
+│   ├── assets/
+│   │   ├── fondo-pokemon.jpg          # Imagen de fondo principal
+│   │   ├── fondopokemon-mobile.jpg    # Fondo alternativo para mobile
+│   │   ├── Logo.png                   # Logo del proyecto
+│   │   ├── personajes.png             # Imagen decorativa de personajes
+│   │   ├── pokebola.png               # Recurso gráfico adicional
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── Card.jsx                   # Tarjeta individual de Pokémon
+│   │   ├── Footer.jsx                 # Pie de página
+│   │   └── NavBar.jsx                 # Barra de navegación principal
+│   ├── pages/
+│   │   ├── Home.jsx                   # Página de inicio con introducción
+│   │   ├── ListaPokemones.jsx         # Renderizado dinámico del listado
+│   │   └── DetallePokemon.jsx         # Vista detallada de cada Pokémon
+│   ├── styles/
+│   │   ├── App.css                    # Estilos globales y animaciones
+│   │   ├── index.css                  # Estilos base del proyecto
+│   │   └── ListaPokemones.css         # Estilos específicos del listado
+│   ├── App.jsx                        # Configuración principal de rutas
+│   └── main.jsx                       # Punto de entrada del proyecto
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 📦 Instalación
+
+### Prerrequisitos
+- **Node.js** (versión 16 o superior)
+- **npm** o **yarn**
+
+### Pasos
+
+1. **Clona el repositorio**
+   ```bash
+   git clone https://github.com/atunditun05/tp-final-react--valentin-vattuone-.git
+   cd tp-final-react--valentin-vattuone-
+   ```
+
+2. **Instala las dependencias**
+   ```bash
+   npm install
+   ```
+
+---
+
+## 🚀 Ejecución del Proyecto
+
+Para iniciar el servidor de desarrollo:
+```bash
+npm run dev
+```
+
+Luego abrí en tu navegador:
+```
+http://localhost:5174
+```
+
+---
+
+## 🧭 Guía de Uso
+
+### 🏠 **Inicio**
+Pantalla principal con un mensaje de bienvenida e imagen temática.  
+Permite acceder al listado general de Pokémon.
+
+### 📋 **Listado de Pokémon**
+Visualiza múltiples tarjetas con:
+- Imagen oficial del Pokémon  
+- Nombre y número de ID  
+- Botón **“Ver detalle”** para acceder a la información completa  
+
+### 🔍 **Detalle de Pokémon**
+Muestra:
+- Imagen en tamaño grande  
+- Tipos y movimientos  
+- Estadísticas base representadas gráficamente  
+- Datos generales: altura, peso y experiencia base  
+
+---
+
+## 🎨 Diseño y Estilo
+
+- **Fondo personalizado** con imagen temática Pokémon.  
+- **Paleta de colores** basada en tonos cálidos y alegres (rojos, amarillos y verdes).  
+- **Efectos visuales**:  
+  - Hover con aumento de escala en las tarjetas.  
+  - Animaciones sutiles al cargar los componentes.  
+  - Sombras suaves para resaltar elementos.  
+
+Vista previa del proyecto:
+
+![Home](./src/assets/proyecto-preview.jpg)
+![Listado de Pokemones](./src/assets/proyecto-preview-01.jpg)
+![Detalle del Pokémon](./src/assets/proyecto-preview-02.jpg)
+
+---
+
+## 👨‍💻 Autor
+
+**Valentín Vattuone**  
+Proyecto final de la materia **Programación Frontend con React**  
+📍 Repositorio: [Pokepedia - GitHub](https://github.com/atunditun05/tp-final-react--valentin-vattuone-.git)
+
+---
+
+## 📜 Licencia
+Este proyecto fue desarrollado con fines educativos y de práctica.  
+Datos proporcionados por [PokéAPI](https://pokeapi.co/).

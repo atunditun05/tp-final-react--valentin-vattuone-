@@ -35,8 +35,8 @@ function NavbarBootstrap() {
               </Link>
             </li>
              <li className="nav-item">
-              <Link className="nav-link" to="/pokemones/">
-                Favoritos
+              <Link className="nav-link" to="/pokemones/1">
+                PokeDetalles
               </Link>
             </li>
           </ul>

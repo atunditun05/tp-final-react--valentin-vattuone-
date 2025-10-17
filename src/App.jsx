@@ -4,6 +4,7 @@ import ListaPokemones from "./pages/ListaPokemones.jsx";
 import DetallePokemon from "./pages/DetallePokemon.jsx";
 import NavBar from "./components/NavBar.jsx";
 import "./styles/App.css";
+import Footer from "./components/Footer.jsx";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
               element={<h1>Error 404 - Página no encontrada</h1>}
             />
           </Routes>
+          <Footer/>
       </Router>
     </>
   );
