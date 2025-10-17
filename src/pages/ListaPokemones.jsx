@@ -64,7 +64,7 @@ export default function ListaPokemones() {
       </div>
     );
   }
-  // falta rotar la pokebola
+
   return (
     <div className="container py-5">
       <h1 className="display-4 text-center my-4 text-white">Listado de Pokémones</h1>

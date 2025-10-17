@@ -19,16 +19,12 @@ const Home = () => {
       </h2>
 
       <div className="home-container">
-        
-             <img src={personajes} alt="personajes" className="personajes" />
+        <img src={personajes} alt="personajes" className="personajes" />
 
-    <Link to="/pokemones" className="btn btn-danger d-block" role="button"
-    >
-        <strong>COMENZAR A EXPLORAR</strong>
-    </Link>
-<div className="texto-container">
-               
-       
+        <Link to="/pokemones" className="btn btn-danger d-block" role="button">
+          <strong>COMENZAR A EXPLORAR</strong>
+        </Link>
+        <div className="texto-container">
           <h4>
             En este proyecto realizado con React Js + Vite, utilizaremos la
             PokeApi, sus datos e imágenes para:
@@ -39,7 +35,6 @@ const Home = () => {
               pokemones existentes.
             </li>
             <li>Descubrir nuevos pokemones</li>
-            <li>Agregar tus pokemones favoritos y guardar sus datos.</li>
             <li>
               Navegar por la página en cualquier dispositivo, gracias a su
               diseño responsive.
