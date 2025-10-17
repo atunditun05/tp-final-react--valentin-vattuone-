@@ -10,17 +10,14 @@ function App() {
     <>
       <Router>
         <NavBar />
-       
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/pokemones" element={<ListaPokemones />} />
-            <Route path="/pokemones/:id" element={<DetallePokemon />} />
-            <Route
-              path="*"
-              element={<h1>Error 404 - Página no encontrada</h1>}
-            />
-          </Routes>
-          <Footer/>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/pokemones" element={<ListaPokemones />} />
+          <Route path="/pokemones/:id" element={<DetallePokemon />} />
+          <Route path="*" element={<h1>Error 404 - Página no encontrada</h1>} />
+        </Routes>
+        <Footer />
       </Router>
     </>
   );

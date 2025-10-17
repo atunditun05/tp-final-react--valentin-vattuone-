@@ -62,13 +62,13 @@ function PokemonDetalle() {
       <div className="detallepokemon-caracteristicas">
         <h1 className="detallepokemon-caracteristicas-titulo">Tipos</h1>
         <div className="detallepokemon-caracteristicas-value">
-                  <div className="detalle-pokemon-type-data">
-          {pokemon.types.map((type) => (
-            <div className="tag-type" key={type.type.name}>
-              {type.type.name}
-            </div>
+          <div className="detalle-pokemon-type-data">
+            {pokemon.types.map((type) => (
+              <div className="tag-type" key={type.type.name}>
+                {type.type.name}
+              </div>
             ))}
-            </div>
+          </div>
         </div>
       </div>
 

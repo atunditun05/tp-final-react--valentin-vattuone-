@@ -86,7 +86,7 @@ h5 {
   list-style-position: inside;
 }
 .d-inline-block {
-width: 10em;
+  width: 10em;
 }
 
 .card {
@@ -271,7 +271,7 @@ width: 10em;
   display: flex;
   align-items: center;
   justify-content: center;
-background-color: #eee;
+  background-color: #eee;
 }
 .pokebola {
   animation-name: spin;
@@ -280,37 +280,36 @@ background-color: #eee;
   animation-iteration-count: infinite;
   transform-origin: center center;
 }
-.footer-container{
+.footer-container {
   background-color: #eee;
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 0px;
 }
-.footer-content{
+.footer-content {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer-content p{
+.footer-content p {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-
 }
 @media screen and (max-width: 426px) {
   * {
     box-sizing: border-box;
   }
   .navbar-brand {
-        margin-right: 0 !important;
-        margin-left: 0 !important;
-        padding-left: 50px;
-        padding-right: 50px;
-        justify-content: center;
-        width: auto;
-    }
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    width: auto;
+  }
   .home h1 {
     font-size: 2em;
   }
@@ -421,13 +420,13 @@ background-color: #eee;
   .home h1 {
     font-size: 3em;
   }
-    .home h2 {
+  .home h2 {
     font-size: 2.3em;
   }
-    .home h3 {
+  .home h3 {
     font-size: 1.8em;
   }
-  .home ul{
+  .home ul {
     font-size: 1em;
   }
 
