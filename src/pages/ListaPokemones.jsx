@@ -59,8 +59,8 @@ export default function ListaPokemones() {
 
   if (loading) {
     return (
-      <div>
-        <img src={pokebola} alt="pokebola-cargando" />
+      <div className="pokebola-loading">
+        <img src={pokebola} alt="pokebola-cargando" className="pokebola"/>
       </div>
     );
   }
@@ -71,7 +71,7 @@ export default function ListaPokemones() {
 
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
         {pokemonData.map((pokemon, index) => (
-          <div className="col" key={index}>
+          <div className="col d-flex justify-content-center" key={index}>
             <Card pokemonData={pokemon} />
           </div>
         ))}
